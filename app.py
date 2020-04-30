@@ -1,4 +1,5 @@
-num = [5,2,5,2,2]
+numbers = [ 5, 2, 5, 1, 7, 4]
+print(numbers)
+numbers.index(5)
 
-for x in num:
-    print('x'*x)
+print(numbers)
