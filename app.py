@@ -1,18 +1,27 @@
-secretNumber = 9
-guessCount = 0
-maxGuesses = 5
-while guessCount < maxGuesses:
-    guess = int(input("Guess a number: "))
-    guessCount+=1
-    if secretNumber == guess:
-        print("Yey you won!")
+is_running = False
+inn = ""
+while True:
+    inn = input(">").upper()
+    if inn == "HELP":
+        print('''
+start - to start the car
+stop - to stop the car
+quit - to exit
+        ''')
+    elif inn == "START":
+        if is_running:
+            print("Car is already running.")
+        else:
+            is_running = True
+            print("Car started... Ready to go!")
+    elif inn == "STOP":
+        if not is_running:
+            print("Car is not on.")
+        else:
+            is_running = False
+            print("Car stopped.")
+    elif inn == "quit":
         break
     else:
-        print("Looser, try again!")
-        if guess < secretNumber:
-            print("Guess higher")
-        else:
-            print("Guess lower")
-else:
-    print("You lost the simple game!")
-print("Awsome game has exited the building")
+        print("I don't understand that")
+print("Bye Bye")
