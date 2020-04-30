@@ -1,5 +1,6 @@
-numbers = [ 5, 2, 5, 1, 7, 4]
-print(numbers)
-numbers.index(5)
+numbers = (1, 2, 3)
+x = numbers[0]
+y = numbers[1]
+z = numbers[2]
 
-print(numbers)
+xy, yy, zy = numbers
