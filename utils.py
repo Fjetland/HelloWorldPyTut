@@ -1,6 +1,6 @@
 def find_max(list):
-    max = list[0]
+    max_num = list[0]
     for num in list[1:]:
-        if num > max:
-            max = num
-    return max
+        if num > max_num:
+            max_num = num
+    return max_num
