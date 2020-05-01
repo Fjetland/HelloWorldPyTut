@@ -1,22 +1,21 @@
-def greetUser(firstName ="NoFirst", lastName =""):
-    """
-    One awesome greeting function
-    :type firstName: str
-    :type lastName: str
-    """
-    print(f"Hi {firstName} {lastName}!")
-    print("Welcome aboard")
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def move(self):
+        print("move")
+
+    def draw(self):
+        print("draw")
+
+    def print(self):
+        print(f"({self.x}, {self.y})")
 
 
-def square(number):
-    return number * number
+point = Point(10, 2)
+point.x = 11
+print(point.x)
+point.print()
 
 
-print("Start")
-greetUser("Andreas", "Fjetland")
-greetUser("Christine", lastName="Ødegård")
-greetUser()
-print("Finish")
-
-print("Square function example")
-print(square(3))
