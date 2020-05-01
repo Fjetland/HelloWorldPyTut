@@ -1,12 +1,10 @@
-message = input(">")
-words = message.split(' ')
-emojis = {
-    ":)": "😊️️",
-    ":(": "☹️"
-}
+def greetUser(firstname ="NoFirst", lastname = ""):
+    print(f"Hi {firstname} {lastname}!")
+    print("Welcome aboard")
 
-out = ""
-for word in words:
-     out += emojis.get(word, word) + " "
 
-print(out)
+print("Start")
+greetUser("Andreas", "Fjetland")
+greetUser(lastname="Ødegård", firstname="Christine")
+greetUser()
+print("Finish")
